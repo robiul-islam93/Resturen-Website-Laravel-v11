@@ -1,0 +1,1 @@
+<h1 style="text-align: center; color:crimson; margin-top: 50px;">This is Userpanel Index page</h1>
