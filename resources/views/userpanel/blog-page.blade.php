@@ -143,6 +143,21 @@
                   </div>
               </div>
           </article>
+          <!-- Card 8 -->
+          <article class="blog-card">
+              <div class="card-image">
+                  <img src="https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?auto=format&fit=crop&q=80&w=800&h=500" alt="Cocktails">
+              </div>
+              <div class="card-content">
+                  <span class="category">Mixology</span>
+                  <h2>Spring Season: Menu Items</h2>
+                  <p>Exploring our innovative cocktail menu and mixology techniques.</p>
+                  <div class="card-meta">
+                      <span class="author">Linda Martinez</span>
+                      <span class="read-time">8 min read</span>
+                  </div>
+              </div>
+          </article>
       </div>
   </main>
 

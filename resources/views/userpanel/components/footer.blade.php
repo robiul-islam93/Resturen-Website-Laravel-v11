@@ -1,105 +1,86 @@
+<footer class="footer">
+    <div class="container py-5">
+        <div class="row g-4">
+            <!-- About Section -->
+            <div class="col-lg-4 col-md-6">
+                <div class="footer-about">
+                    <h3>Taste Haven</h3>
+                    <p>Experience culinary excellence in every bite. Our commitment to quality and service makes every dining moment special.</p>
+                    <div class="social-links">
+                        <a href="#" class="social-link"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-twitter"></i></a>
+                        <a href="#" class="social-link"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+            </div>
 
-    <!-------------------------- Footer section start here -------------------------->
-    <footer class="footer text-light pt-5">
-        <div
-          class="footer-logo d-flex align-items-center justify-content-center mb-4"
-        >
-          <hr class="footer-line" />
-          <img
-            src="{{asset('userpanel/assets/img/footer-logo.png')}}"
-            alt="Royal Restaurant Logo"
-            class="logo mx-3"
-          />
-          <hr class="footer-line" />
+            <!-- Quick Links -->
+            <div class="col-lg-2 col-md-6">
+                <h3>Quick Links</h3>
+                <ul class="footer-links">
+                    <li><a href="#">Home</a></li>
+                    <li><a href="#">Menu</a></li>
+                    <li><a href="#">Reservations</a></li>
+                    <li><a href="#">About Us</a></li>
+                    <li><a href="#">Contact</a></li>
+                </ul>
+            </div>
+
+            <!-- Contact Info -->
+            <div class="col-lg-3 col-md-6">
+                <h3>Contact Info</h3>
+                <ul class="contact-info">
+                    <li>
+                        <i class="fas fa-map-marker-alt"></i>
+                        <span>123 Dining Street, Food City, FC 12345</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-phone"></i>
+                        <span>+1 (555) 123-4567</span>
+                    </li>
+                    <li>
+                        <i class="fas fa-envelope"></i>
+                        <span>info@tastehaven.com</span>
+                    </li>
+                </ul>
+            </div>
+
+            <!-- Opening Hours -->
+            <div class="col-lg-3 col-md-6">
+                <h3>Opening Hours</h3>
+                <ul class="opening-hours">
+                    <li>
+                        <span>Monday - Friday</span>
+                        <span>9:00 AM - 10:00 PM</span>
+                    </li>
+                    <li>
+                        <span>Saturday</span>
+                        <span>10:00 AM - 11:00 PM</span>
+                    </li>
+                    <li>
+                        <span>Sunday</span>
+                        <span>10:00 AM - 9:00 PM</span>
+                    </li>
+                </ul>
+                <button class="reservation-btn">Book a Table</button>
+            </div>
         </div>
-        <!-- logo div end -->
+    </div>
 
+    <!-- Copyright Section -->
+    <div class="footer-bottom">
         <div class="container">
-          <div class="row">
-            <div class="col-md-4 mb-4">
-              <div class="footer-nav-menu mx-4">
-                <h5 class="text-uppercase">Explore</h5>
-                <ul class="list-unstyled">
-                  <li><a href="#" class="text-light">About Us</a></li>
-                  <li><a href="#" class="text-light">Help Center</a></li>
-                  <li><a href="#" class="text-light">Career</a></li>
-                  <li><a href="#" class="text-light">FAQs</a></li>
-                  <li><a href="#" class="text-light">Contact Us</a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- container div end -->
-
-            <div class="col-md-4 mb-4">
-              <h5 class="text-uppercase">Contact Info</h5>
-              <ul class="list-unstyled my-4">
-                <li>
-                  <i class="fa-solid fa-location-dot footer-icon"></i> 2604 W 7th
-                  St, Austin,<br />
-                  United States
-                </li>
-                <li><i class="fas fa-phone footer-icon"></i> (512) 477-0700</li>
-                <li>
-                  <i class="fas fa-envelope footer-icon"></i>
-                  royalrestaurant@gmail.com
-                </li>
-              </ul>
-            </div>
-            <div class="col-md-4 mb-4">
-              <h5 class="text-uppercase">Newsletter</h5>
-              <p>
-                Join our subscribers list to get the latest news and special
-                offers.
-              </p>
-              <form action="#">
-                <div class="form-group">
-                  <input
-                    type="email"
-                    class="form-control"
-                    placeholder="Your Email"
-                  />
+            <div class="row py-3">
+                <div class="col-md-6 text-center text-md-start">
+                    <p class="mb-0">&copy; 2024 Taste Haven. All rights reserved.</p>
                 </div>
-                <div class="form-group form-check">
-                  <input type="checkbox" class="form-check-input" />
-                  <label class="form-check-label" for="subscribeCheck"
-                    >I agree with the terms & conditions.</label
-                  >
+                <div class="col-md-6 text-center text-md-end">
+                    <a href="#">Privacy Policy</a>
+                    <a href="#">Terms & Conditions</a>
                 </div>
-              </form>
-              <div class="social-icons mt-3">
-                <a href="#" class="mx-2"><i class="fab fa-facebook-f"></i></a>
-                <a href="#" class="mx-2"><i class="fab fa-instagram"></i></a>
-                <a href="#" class="mx-2"><i class="fab fa-linkedin-in"></i></a>
-                <a href="#" class="mx-2"><i class="fab fa-twitter"></i></a>
-              </div>
             </div>
-          </div>
         </div>
-        <!-- container div end -->
+    </div>
+</footer>
 
-        <div class="footer__copyright">
-          <div class="container">
-            <div class="row">
-              <div class="col-md-6 text-center text-md-left">
-                <p>© Copyright 2024 Royal Restaurant. All Rights Reserved.</p>
-              </div>
-              <div class="col-md-6 text-center text-md-right">
-                <ul class="list-unstyled d-inline-flex">
-                  <li><a href="#" class="text-light mx-2">Terms</a></li>
-                  <li><a href="#" class="text-light mx-2">Privacy</a></li>
-                  <li><a href="#" class="text-light mx-2">Support</a></li>
-                </ul>
-              </div>
-            </div>
-            <!-- row div end -->
-          </div>
-          <!-- container div end -->
-        </div>
-        <!-- footer__copyright div end -->
-      </footer>
-      <!-------------------------- Footer section end here -------------------------->
-
-      <!-- Back to Top Button -->
-      <button id="backToTop" class="customer-back-to-top">↑</button>
-
-      <!-- Include WOW.js and Animate.css -->

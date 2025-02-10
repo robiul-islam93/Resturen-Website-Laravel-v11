@@ -389,6 +389,34 @@
                             <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
                         </div>
                     </div>
+                    <div class="menus border-bottom-0 d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url({{asset('userpanel/assets/img/menu-img/dinner-2.jpg')}});"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Beef Roast Source</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">$29</span>
+                                </div>
+                            </div>
+                            <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                        </div>
+                    </div>
+                    <div class="menus border-bottom-0 d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url({{asset('userpanel/assets/img/menu-img/dessert-3.jpg')}});"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Beef Roast Source</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">$29</span>
+                                </div>
+                            </div>
+                            <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                        </div>
+                    </div>
                     <span class="flat flaticon-omelette" style="left: 0;"></span>
                     <span class="flat flaticon-burger" style="right: 0;"></span>
                 </div>
@@ -416,6 +444,48 @@
                     </div>
                     <div class="menus d-flex ftco-animate">
                         <div class="menu-img img" style="background-image: url({{asset('userpanel/assets/img/menu-img/dessert-2.jpg')}});"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Beef Roast Source</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">$29</span>
+                                </div>
+                            </div>
+                            <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url({{asset('userpanel/assets/img/menu-img/wine-2.jpg')}});"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Beef Roast Source</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">$29</span>
+                                </div>
+                            </div>
+                            <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url({{asset('userpanel/assets/img/menu-img/wine-1.jpg')}});"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Beef Roast Source</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">$29</span>
+                                </div>
+                            </div>
+                            <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url({{asset('userpanel/assets/img/menu-img/dessert-3.jpg')}});"></div>
                         <div class="text">
                             <div class="d-flex">
                                 <div class="one-half">
@@ -660,6 +730,20 @@
                     </div>
                     <div class="menus d-flex ftco-animate">
                         <div class="menu-img img" style="background-image: url({{asset('userpanel/assets/img/menu-img/drink-5.jpg')}});"></div>
+                        <div class="text">
+                            <div class="d-flex">
+                                <div class="one-half">
+                                    <h3>Beef Roast Source</h3>
+                                </div>
+                                <div class="one-forth">
+                                    <span class="price">$29</span>
+                                </div>
+                            </div>
+                            <p><span>Meat</span>, <span>Potatoes</span>, <span>Rice</span>, <span>Tomatoe</span></p>
+                        </div>
+                    </div>
+                    <div class="menus d-flex ftco-animate">
+                        <div class="menu-img img" style="background-image: url({{asset('userpanel/assets/img/menu-img/wine-8.jpg')}});"></div>
                         <div class="text">
                             <div class="d-flex">
                                 <div class="one-half">

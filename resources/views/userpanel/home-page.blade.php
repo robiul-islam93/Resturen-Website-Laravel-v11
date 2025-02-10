@@ -411,7 +411,7 @@
 
 <!----------------------------------------- Resturent Tab menu Section Start  ------------------------------------->
 
-<!-- Dishes Start -->
+<!------------------------------------------------- Dishes Start ------------------------------------------------->
 <div class="our_dishes">
   <div class="container">
     <div class="heading">
@@ -441,9 +441,7 @@
               />
 
               <div class="view_icon">
-                <a href="#" class="icon">
-                  <i class="fa-solid fa-eye"></i>
-                </a>
+
               </div>
             </div>
             <div class="dish_details">
@@ -472,9 +470,7 @@
               />
 
               <div class="view_icon">
-                <a href="#" class="icon">
-                  <i class="fa-solid fa-eye"></i>
-                </a>
+
               </div>
             </div>
             <div class="dish_details">
@@ -503,9 +499,7 @@
               />
 
               <div class="view_icon">
-                <a href="#" class="icon">
-                  <i class="fa-solid fa-eye"></i>
-                </a>
+
               </div>
             </div>
             <div class="dish_details">
@@ -534,9 +528,7 @@
               />
 
               <div class="view_icon">
-                <a href="#" class="icon">
-                  <i class="fa-solid fa-eye"></i>
-                </a>
+
               </div>
             </div>
             <div class="dish_details">
@@ -570,9 +562,7 @@
               />
 
               <div class="view_icon">
-                <a href="#" class="icon">
-                  <i class="fa-solid fa-eye"></i>
-                </a>
+
               </div>
             </div>
             <div class="dish_details">
@@ -601,9 +591,65 @@
               />
 
               <div class="view_icon">
-                <a href="#" class="icon">
-                  <i class="fa-solid fa-eye"></i>
-                </a>
+
+              </div>
+            </div>
+            <div class="dish_details">
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5.1)</span>
+              </div>
+              <h3 class="dishes_name">steak with mashed potato</h3>
+              <div class="price">
+                <span>$149.99</span>
+                <button class="order_btn">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-13 d-flex align-item-stretch">
+          <div class="dishes_card">
+            <div class="dishes">
+              <img
+                src="{{asset('userpanel/assets/img/signature-dishes-img/all-signature-dishes-img/6_2x.webp')}}"
+                alt=""
+              />
+
+              <div class="view_icon">
+
+              </div>
+            </div>
+            <div class="dish_details">
+              <div class="rating">
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <i class="fa-solid fa-star"></i>
+                <span>(5.1)</span>
+              </div>
+              <h3 class="dishes_name">steak with mashed potato</h3>
+              <div class="price">
+                <span>$149.99</span>
+                <button class="order_btn">Order Now</button>
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="col-xl-3 col-sm-6 col-13 d-flex align-item-stretch">
+          <div class="dishes_card">
+            <div class="dishes">
+              <img
+                src="{{asset('userpanel/assets/img/signature-dishes-img/all-signature-dishes-img/6_2x.webp')}}"
+                alt=""
+              />
+
+              <div class="view_icon">
+
               </div>
             </div>
             <div class="dish_details">
@@ -628,7 +674,7 @@
 
     <div id="dinner" class="tab-content">
       <div class="row g-3 g-md-4">
-        <div class="col-xl-3 col-sm-6 col-13 d-flex align-item-stretch">
+        {{-- <div class="col-xl-3 col-sm-6 col-13 d-flex align-item-stretch">
           <div class="dishes_card">
             <div class="dishes">
               <img
@@ -637,9 +683,7 @@
               />
 
               <div class="view_icon">
-                <a href="#" class="icon">
-                  <i class="fa-solid fa-eye"></i>
-                </a>
+
               </div>
             </div>
             <div class="dish_details">
@@ -658,15 +702,8 @@
               </div>
             </div>
           </div>
-        </div>
+        </div> --}}
       </div>
-    </div>
-  </div>
-  <!-- Modal -->
-  <div id="imageModal" class="modal">
-    <div class="modal-content">
-      <span class="close">&times;</span>
-      <img id="modalImage" src="" alt="Food Image" />
     </div>
   </div>
 </div>
@@ -682,7 +719,7 @@
     <form action="book.table.store" method="POST">
         @csrf
       <div class="row mb-3">
-        <div class="col-md-6">
+        <div class="col-md-4">
           <input
             type="text"
             class="form-control"
@@ -691,13 +728,22 @@
             required
           />
         </div>
-        <div class="col-md-6">
+        <div class="col-md-4">
           <input
             type="text"
             class="form-control"
             name="mobile"
             placeholder="Phone Number"
             required
+          />
+        </div>
+        <div class="col-md-4">
+          <input
+            type="text"
+            class="form-control"
+            name="email"
+            placeholder="enter You Email"
+
           />
         </div>
       </div>
@@ -747,67 +793,80 @@
 
 <!------------------------------- News and blog section start here -------------------------->
 
-<section class="mt-5 news-blog-section">
-  <div class="container">
-    <div class="text-center mb-5">
-      <h2 class="text-uppercase">News & Blog</h2>
-      <h3 class="text-secondary">What's Happening</h3>
-    </div>
-
-    <div id="newsCarousel" class="carousel slide" data-bs-ride="carousel">
-      <div class="carousel-inner">
-        <div class="carousel-item active">
-          <div class="row">
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="vlog-card">
-                <img
-                  src="{{asset('userpanel/assets/img/news-blog-1.png')}}"
-                  class="img-fluid"
-                  alt="Valentine Special"
-                />
-                <div class="card-body">
-                  <span class="badge badge-custom">EVENTS</span>
-                  <p class="card-date">February 14, 2024</p>
-                  <h5 class="card-title">Valentine Special</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="vlog-card">
-                <img
-                  src="{{asset('userpanel/assets/img/news-blog-2.png')}}"
-                  class="img-fluid"
-                  alt="Tortellini Pasta"
-                />
-                <div class="card-body">
-                  <span class="badge badge-custom">RECIPE</span>
-                  <p class="card-date">June 17, 2024</p>
-                  <h5 class="card-title">Tortellini Pasta</h5>
-                </div>
-              </div>
-            </div>
-
-            <div class="col-lg-4 col-md-6 col-sm-12">
-              <div class="vlog-card">
-                <img
-                  src="{{asset('userpanel/assets/img/news-blog-3.png')}}"
-                  class="img-fluid"
-                  alt="Seasoning Desert"
-                />
-                <div class="card-body">
-                  <span class="badge badge-custom">FOOD</span>
-                  <span class="badge badge-custom">SHOP</span>
-                  <p class="card-date">June 17, 2024</p>
-                  <h5 class="card-title">Seasoning Desert</h5>
-                </div>
-              </div>
-            </div>
-          </div>
+<section class="blog-section py-5">
+    <div class="container">
+        <div class="section-header text-center mb-5">
+            <h2>Latest From Our Blog</h2>
+            <div class="section-divider"></div>
+            <p class="section-subtitle">Discover culinary stories, recipes, and news</p>
         </div>
-      </div>
+
+        <div class="row g-4">
+            <!-- Blog Card 1 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1514326640560-7d063ef2aed5?auto=format&fit=crop&q=80&w=800&h=500"
+                             alt="Seasonal Menu" class="img-fluid">
+                        <div class="blog-date">
+                            <span class="day">20</span>
+                            <span class="month">Mar</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Spring Season: Menu Items</h3>
+                        <p>Discover our latest seasonal menu featuring fresh, locally-sourced </p>
+                        {{-- <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a> --}}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 2 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1414235077428-338989a2e8c0?auto=format&fit=crop&q=80&w=800&h=500"
+                             alt="Cooking Class" class="img-fluid">
+                        <div class="blog-date">
+                            <span class="day">25</span>
+                            <span class="month">Mar</span>
+                        </div>
+                    </div>
+                    <div class="blog-content">
+                        <h3>Cooking Classes Now Available</h3>
+                        <p>Join our expert chefs for hands-on cooking classes and learn the secrets of </p>
+                        {{-- <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a> --}}
+                    </div>
+                </div>
+            </div>
+
+            <!-- Blog Card 3 -->
+            <div class="col-lg-4 col-md-6">
+                <div class="blog-card">
+                    <div class="blog-image">
+                        <img src="https://images.unsplash.com/photo-1424847651672-bf20a4b0982b?auto=format&fit=crop&q=80&w=800&h=500"
+                             alt="Wine Tasting" class="img-fluid">
+
+                             <div class="blog-date">
+                                <span class="day">30</span>
+                                <span class="month">Mar</span>
+                            </div>
+                    </div>
+                    <div class="blog-content">
+
+                        <h3>Wine Pairing: A Complete Guide</h3>
+                        <p>Explore our sommelier's guide to perfect wine pairings for an enhanced dining </p>
+                        {{-- <a href="#" class="read-more">Read More <i class="fas fa-arrow-right"></i></a> --}}
+                    </div>
+                </div>
+            </div>
+        </div>
+
+        <!-- See More Button -->
+        <div class="text-center mt-5">
+            <a href="{{url('blog-page')}}" class="see-more-btn">See More Posts</a>
+        </div>
     </div>
-  </div>
 </section>
 
 <!--------------------------------- News and blog section end here -------------->

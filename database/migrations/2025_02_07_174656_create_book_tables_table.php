@@ -13,6 +13,7 @@ return new class extends Migration {
         Schema::create('book_tables', function (Blueprint $table) {
             $table->id();
             $table->string('name');
+            $table->string('email')->nullable();
             $table->string('mobile');
             $table->date('date');
             $table->string('time_slot');

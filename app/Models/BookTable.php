@@ -11,6 +11,7 @@ class BookTable extends Model
     protected $fillable = [
         'name',
         'mobile',
+        'email',
         'date',
         'time_slot',
         'guest',
