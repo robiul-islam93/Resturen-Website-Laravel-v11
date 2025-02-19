@@ -11,6 +11,7 @@
     <link href="{{asset('userpanel/assets/css/menu.css')}}" rel="stylesheet" />
     <link href="{{asset('userpanel/assets/css/about.css')}}" rel="stylesheet" />
     <link href="{{asset('userpanel/assets/css/blog.css')}}" rel="stylesheet" />
+    <link href="{{asset('userpanel/assets/css/blog-news-single.css')}}" rel="stylesheet" />
     <link href="{{asset('userpanel/assets/css/contact.css')}}" rel="stylesheet" />
     <link rel="stylesheet" href="{{asset('userpanel/assets/css/bootstrap.min.css')}}" />
     <!-- style css end  -->

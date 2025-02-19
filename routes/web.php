@@ -76,6 +76,7 @@ Route::view('/kitchen-page', 'userpanel.kitchen-page');
 Route::view('/menu-page', 'userpanel.menu-page');
 Route::view('/about-page', 'userpanel.about-page');
 Route::view('/blog-page', 'userpanel.blog-page');
+Route::view('/single-blog-page', 'userpanel.single-blog-page');
 
 
 
