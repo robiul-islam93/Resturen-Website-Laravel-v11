@@ -2,6 +2,7 @@
 
 use Illuminate\Support\Facades\Auth;
 use Illuminate\Support\Facades\Route;
+use App\Http\Controllers\BlogController;
 use App\Http\Controllers\ProfileController;
 use App\Http\Controllers\BookTableController;
 use App\Http\Controllers\ContactFormController;
@@ -25,12 +26,12 @@ Route::middleware('auth')->group(function () {
     Route::get('/admin/index/page/all/information', [AdminDashboardController::class, 'adminDashboard'])->name('admin-index-page');
 
     // Testing curd operation routes
-    Route::get('/list/record', [TestingController::class, 'listRecord'])->name('list-record');
-    Route::get('/create/record', [TestingController::class, 'createRecord'])->name('create-record');
-    Route::post('/testing/store', [TestingController::class, 'storeTestingRecord'])->name('testing-store');
-    Route::get('/edit/record/{id}', [TestingController::class, 'updateRecord'])->name('edit-record');
-    Route::post('/update/record/{id}', [TestingController::class, 'updateRecordStore'])->name('update-record');
-    Route::delete('/delete/record/{id}', [TestingController::class, 'deleteRecord'])->name('delete-record');
+    // Route::get('/list/record', [TestingController::class, 'listRecord'])->name('list-record');
+    // Route::get('/create/record', [TestingController::class, 'createRecord'])->name('create-record');
+    // Route::post('/testing/store', [TestingController::class, 'storeTestingRecord'])->name('testing-store');
+    // Route::get('/edit/record/{id}', [TestingController::class, 'updateRecord'])->name('edit-record');
+    // Route::post('/update/record/{id}', [TestingController::class, 'updateRecordStore'])->name('update-record');
+    // Route::delete('/delete/record/{id}', [TestingController::class, 'deleteRecord'])->name('delete-record');
 
 
 
@@ -83,3 +84,28 @@ Route::view('/single-blog-page', 'userpanel.single-blog-page');
 // contact consgratulation message Route
 
 Route::view('/consgratulation-message','userpanel.consgratulation-page');
+
+
+// Dashboard Route Start
+
+
+Route::get('/list/record', [TestingController::class, 'listRecord'])->name('list-record');
+Route::get('/create/record', [TestingController::class, 'createRecord'])->name('create-record');
+Route::post('/testing/store', [TestingController::class, 'storeTestingRecord'])->name('testing-store');
+Route::get('/edit/record/{id}', [TestingController::class, 'updateRecord'])->name('edit-record');
+Route::post('/update/record/{id}', [TestingController::class, 'updateRecordStore'])->name('update-record');
+Route::delete('/delete/record/{id}', [TestingController::class, 'deleteRecord'])->name('delete-record');
+
+
+
+// Blog Start Route
+
+Route::get('/admin-DaShboard-blog-list', [BlogController::class, 'BlogList'])->name('blog-list');
+Route::post('/admin-daShboard-blog-store', [BlogController::class, 'BlogStore'])->name('blog-store');
+Route::get('/admin-dashboard-blog-edit/{id}', [BlogController::class, 'BlogIDDataShow'])->name('edit-record');
+Route::post('/admin-dashboard-blog-update/{id}', [BlogController::class, 'BlogUpdate'])->name('update-record');
+Route::delete('/admin-dashboard-blog-delete/{id}', [BlogController::class, 'deleteblogRecord'])->name('delete-record');
+
+
+
+Route::view('/admin-Dashboard-blog-create', 'adminpanel.blog.blog-create');

@@ -27,7 +27,7 @@
                   <p>Discover our new seasonal dishes featuring fresh, local ingredients and innovative flavors.</p>
                   <div class="card-meta">
                       <span class="author">Chef Maria Santos</span>
-                      <span class="read-time">5 min read</span>
+                      <span class="read-time"> <a href="#">See More</a> </span>
                   </div>
               </div>
           </article>

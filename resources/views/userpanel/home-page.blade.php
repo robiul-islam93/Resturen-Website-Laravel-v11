@@ -586,7 +586,7 @@
           <div class="dishes_card">
             <div class="dishes">
               <img
-                src="{{asset('userpanel/assets/img/signature-dishes-img/all-signature-dishes-img/6_2x.webp')}}"
+                src="{{asset('userpanel/assets/img/met-picture.avif')}}"
                 alt=""
               />
 
@@ -615,7 +615,7 @@
           <div class="dishes_card">
             <div class="dishes">
               <img
-                src="{{asset('userpanel/assets/img/signature-dishes-img/all-signature-dishes-img/6_2x.webp')}}"
+                src="{{asset('userpanel/assets/img/egg-picture.avif')}}"
                 alt=""
               />
 
@@ -644,7 +644,7 @@
           <div class="dishes_card">
             <div class="dishes">
               <img
-                src="{{asset('userpanel/assets/img/signature-dishes-img/all-signature-dishes-img/6_2x.webp')}}"
+              src="{{asset('userpanel/assets/img/carela-sabji.avif')}}"
                 alt=""
               />
 

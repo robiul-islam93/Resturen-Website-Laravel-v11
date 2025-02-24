@@ -14,6 +14,12 @@
                         <span class="nav-text">Dashboard</span>
                     </a>
                 </li>
+                <li>
+                    <a href="{{ route('blog-list') }}" aria-expanded="false">
+                        <i class="icon icon-single-04"></i>
+                        <span class="nav-text">Blog Managment</span>
+                    </a>
+                </li>
 
                 <li>
                     <a href="{{ route('list-record') }}" aria-expanded="false">
