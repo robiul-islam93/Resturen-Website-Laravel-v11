@@ -6,7 +6,7 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width,initial-scale=1">
     <title>Dashboard @yield('title')</title>
-    
+
     <link rel="shortcut icon" href="http://placehold.it/64.png/000/fff">
     <!-- Retina iPad Touch Icon-->
     <link rel="apple-touch-icon" sizes="144x144" href="http://placehold.it/144.png/000/fff">
@@ -30,6 +30,9 @@
     <link href="{{ asset('adminpanel/assets/css/lib/menubar/sidebar.css') }}" rel="stylesheet">
     <link href="{{ asset('adminpanel/assets/css/lib/bootstrap.min.css') }}" rel="stylesheet">
     <link href="{{ asset('adminpanel/assets/css/lib/helper.css') }}" rel="stylesheet">
+
+    <link href="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.css" rel="stylesheet">
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
 
 </head>
 
@@ -115,7 +118,7 @@
     <script src="{{ asset('assets/js/lib/menubar/sidebar.js') }}"></script>
     <script src="{{ asset('assets/js/lib/preloader/pace.min.js') }}"></script>
     <!-- sidebar -->
-    
+
     <!-- bootstrap -->
     <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
 
@@ -125,6 +128,19 @@
     <script src="{{ asset('assets/js/lib/form-validation/jquery.validate.min.js') }}"></script>
     <script src="{{ asset('assets/js/lib/form-validation/jquery.validate-init.js') }}"></script>
     <script src="{{ asset('assets/js/scripts.js') }}"></script>
+
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/summernote/0.8.20/summernote-bs4.min.js"></script>
+
+
+    <script>
+       // Minimal JS just to auto-initialize Summernote
+       $(function () {
+           $('#KeyFuturesummernote').summernote({
+               height: 100,                 // Set editor height
+               placeholder: 'Select Key Feature',
+           });
+       });
+   </script>
 
 </body>
 

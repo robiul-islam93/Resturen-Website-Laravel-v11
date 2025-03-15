@@ -10,13 +10,12 @@
     <article class="blog-post">
       <div class="single-blog-hero position-relative mb-5">
         <div class="single-blog-hero-image">
-          <img src="https://images.unsplash.com/photo-1600891964092-4316c288032e?auto=format&fit=crop&q=80&w=800" alt="Modern cuisine dish" class="w-100" />
+          <img src="{{ asset($blog->img_url) }}" alt="Modern cuisine dish" class="w-100" />
         </div>
         <div class="hero-overlay"></div>
         <div class="single-blog-hero-content  text-center position-absolute start-50 top-50 translate-middle">
           <div class="single-blog-post-meta mb-4">
-            <span class="text-white me-4"><i class="bi bi-calendar3"></i> March 15, 2024</span>
-            <span class="text-white"><i class="bi bi-person"></i>Seasonal Specials</span>
+            <span class="text-white"><i class="bi bi-person"></i>{{ $blog->disease_name }}</span>
           </div>
           <h1 class="display-3 text-white mb-4">The Link Between Food & Mental Health: What You Eat Matters</h1>
 
@@ -26,34 +25,7 @@
       <div class="container">
         <!-- Blog Content -->
         <div class="single-blog-content mb-5">
-          <p class="single-blog-lead">
-            What you eat has a profound impact on your mental well-being. While many focus on diet for physical health, nutrition also plays a important role in brain function, mood regulation, and emotional stability. The connection between food and mental health is largely influenced by the gut-brain axis, where trillions of gut bacteria communicate with the brain through neurotransmitters like serotonin. A diet high in processed foods, sugars, and unhealthy fats can disrupt this balance, leading to increased stress, anxiety, and even depression.
-            Certain nutrients are essential for maintaining a healthy mind. Omega-3 fatty acids found in salmon, walnuts, and flaxseeds help reduce inflammation and support cognitive function. B vitamins from whole grains, eggs, and leafy greens play a important role in energy production and stress management. Antioxidants from berries, dark chocolate, and green tea help combat oxidative stress, which has been linked to mental health disorders. Probiotic and prebiotic-rich foods like yogurt, kefir, bananas, and garlic support gut health, which directly influences mood stability.
-          </p>
-
-          <div class="single-blog-content-section">
-            <p>
-                One of the best diets for mental health is the Mediterranean diet, which emphasizes whole foods such as fruits, vegetables, nuts, whole grains, and lean proteins. Research has shown that this diet can significantly reduce the risk of depression and improve overall brain function. It provides the necessary nutrients to support emotional balance and cognitive clarity while reducing inflammation in the body.
-            </p>
-
-            <div class="quote-section my-5">
-              <blockquote>
-                <p>"Beyond what you eat, how you eat also matters. Practicing mindful eating by slowing down, savoring each bite,
-                    and avoiding distractions can improve digestion and strengthen the connection between food and emotions. Being
-                    conscious of the quality of food and how it makes you feel can lead to better choices and a healthier relationship
-                    with eating.By making small, mindful changes to your diet, you can nourish both your body and mind. Prioritizing nutrient-dense
-                     foods over processed options, staying hydrated, and maintaining a balanced diet can enhance mental clarity, reduce stress, and
-                     promote overall emotional well-being. Food is more than just fuel—it has the power to shape your thoughts, feelings, and overall
-                     mental health."</p>
-                <cite>— Zahra Jabeen</cite>
-              </blockquote>
-            </div>
-
-            <h2>The Art of Modern Plating</h2>
-            <p>
-              Modern plating is where science meets artistry. Each dish is carefully composed to engage all senses, creating a harmonious balance between visual appeal and flavor complexity. We believe that the first taste is taken with the eyes, setting the stage for the culinary journey that follows.
-            </p>
-          </div>
+            {{ $blog->blog_content }}
         </div>
 
         <!-- Review Section -->

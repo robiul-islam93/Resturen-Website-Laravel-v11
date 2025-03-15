@@ -76,8 +76,8 @@ Route::view('/contact-page', 'userpanel.contact-page');
 Route::view('/kitchen-page', 'userpanel.kitchen-page');
 Route::view('/menu-page', 'userpanel.menu-page');
 Route::view('/about-page', 'userpanel.about-page');
-Route::view('/blog-page', 'userpanel.blog-page');
-Route::view('/single-blog-page', 'userpanel.single-blog-page');
+Route::get('/blog-page', [BlogController::class, 'blogpageData'])->name('blog-page');
+Route::get('/single-blog-page{id}', [BlogController::class, 'SingleblogpageData'])->name('single-blog-page');
 
 
 
@@ -102,9 +102,9 @@ Route::delete('/delete/record/{id}', [TestingController::class, 'deleteRecord'])
 
 Route::get('/admin-DaShboard-blog-list', [BlogController::class, 'BlogList'])->name('blog-list');
 Route::post('/admin-daShboard-blog-store', [BlogController::class, 'BlogStore'])->name('blog-store');
-Route::get('/admin-dashboard-blog-edit/{id}', [BlogController::class, 'BlogIDDataShow'])->name('edit-record');
+Route::get('/admin-dashboard-blog-edit/{id}', [BlogController::class, 'BlogIDDataShow'])->name('edit-Item');
 Route::post('/admin-dashboard-blog-update/{id}', [BlogController::class, 'BlogUpdate'])->name('update-record');
-Route::delete('/admin-dashboard-blog-delete/{id}', [BlogController::class, 'deleteblogRecord'])->name('delete-record');
+Route::delete('/admin-dashboard-blog-delete/{id}', [BlogController::class, 'deleteblogRecord'])->name('delete-Item');
 
 
 

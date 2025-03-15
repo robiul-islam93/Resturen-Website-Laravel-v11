@@ -67,7 +67,7 @@
 
     <h2 class="section-title">Cooking Videos</h2>
     <div class="video-grid">
-      <div class="video-card">
+      <div class="video-card" onclick="openModal('modal1')">
         <div class="video-thumbnail">
           <img src="https://images.unsplash.com/photo-1507048331197-7d4ac70811cf" alt="Perfect Pasta Making">
           <div class="play-overlay">
@@ -160,6 +160,24 @@
     </div>
   </div>
 
+  <div id="modal1" class="modal" onclick="closeModal('modal1')">
+    <div class="modal-content" onclick="event.stopPropagation()">
+        <button class="close-btn" onclick="closeModal('modal1')">X</button>
+        <video controls src="{{asset('userpanel/assets/video/SampleVideo_1280x720_1mb.mp4')}}"></video>
+    </div>
+</div>
+
+
+
+<script>
+    function openModal(modalId) {
+        document.getElementById(modalId).style.display = "flex";
+    }
+
+    function closeModal(modalId) {
+        document.getElementById(modalId).style.display = "none";
+    }
+</script>
 
 @include('userpanel.components.footer')
 @endsection
