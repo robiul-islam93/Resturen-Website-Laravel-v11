@@ -4,7 +4,8 @@
     <meta charset="utf-8" />
     <title>Restaurant - HTML Teamplate</title>
     <meta content="width=device-width, initial-scale=1.0" name="viewport" />
-    <!-- style css start  -->
+<link rel="shortcut icon" href="{{asset('userpanel/assets/img/navber-logo.png')}}" type="image/x-icon">
+
     <!-- style css start  -->
     <link href="{{asset('userpanel/assets/css/style.css')}}" rel="stylesheet" />
     <link href="{{asset('userpanel/assets/css/kitchen.css')}}" rel="stylesheet" />
