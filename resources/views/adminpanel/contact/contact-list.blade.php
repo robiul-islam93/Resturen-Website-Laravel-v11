@@ -70,10 +70,7 @@
                                             <button type="button" class="btn btn-sm btn-danger" onclick="showDeleteAlert({{ $item->id }})">Delete</button>
 
                                             <!-- Hidden delete form -->
-                                            <form id="delete-form-{{ $item->id }}" action="{{ route('delete-contact', $item->id) }}" method="POST" style="display: none;">
-                                                @csrf
-                                                @method('DELETE')
-                                            </form>
+
                                         </td>
                                     </tr>
                                     @endforeach

@@ -8,24 +8,23 @@
 <div class="container-fluid px-0">
     <!-- Blog Hero Section -->
     <article class="blog-post">
-      <div class="single-blog-hero position-relative mb-5">
-        <div class="single-blog-hero-image">
-          <img src="{{ asset($blog->img_url) }}" alt="Modern cuisine dish" class="w-100" />
+        <div class="single-blog-hero position-relative mb-5">
+            <div class="single-blog-hero-image">
+                <img src="{{ asset($blog->img_url) }}" alt="Modern cuisine dish" class="w-100" />
+            </div>
+            <div class="hero-overlay"></div>
+            <div class="single-blog-hero-content text-center position-absolute start-50 top-50 translate-middle">
+                <div class="single-blog-post-meta mb-4">
+                    <span class="text-white"><i class="bi bi-person"></i> {{ $blog->disease_name }}</span>
+                </div>
+                <h1 class="display-3 text-white mb-4">{{ $blog->blog_title }}</h1>
+            </div>
         </div>
-        <div class="hero-overlay"></div>
-        <div class="single-blog-hero-content  text-center position-absolute start-50 top-50 translate-middle">
-          <div class="single-blog-post-meta mb-4">
-            <span class="text-white"><i class="bi bi-person"></i>{{ $blog->disease_name }}</span>
-          </div>
-          <h1 class="display-3 text-white mb-4">The Link Between Food & Mental Health: What You Eat Matters</h1>
-
-        </div>
-      </div>
 
       <div class="container">
         <!-- Blog Content -->
         <div class="single-blog-content mb-5">
-            {{ $blog->blog_content }}
+            {!! $blog->blog_content !!}
         </div>
 
         <!-- Review Section -->

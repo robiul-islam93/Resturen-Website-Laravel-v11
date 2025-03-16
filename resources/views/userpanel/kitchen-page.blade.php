@@ -163,7 +163,7 @@
   <div id="modal1" class="modal" onclick="closeModal('modal1')">
     <div class="modal-content" onclick="event.stopPropagation()">
         <button class="close-btn" onclick="closeModal('modal1')">X</button>
-        <video controls src="{{asset('userpanel/assets/video/SampleVideo_1280x720_1mb.mp4')}}"></video>
+        <video controls src="{{asset('userpanel/assets/video/lv_0_20240921144816.mp4')}}"></video>
     </div>
 </div>
 

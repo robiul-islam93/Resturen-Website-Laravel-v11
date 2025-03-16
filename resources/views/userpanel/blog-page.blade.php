@@ -15,26 +15,28 @@
 
   <!-- Blog Cards Section -->
   <main class="blog-container">
-      <div class="blog-grid">
-          <!-- Card 1 -->
-          @foreach($BlogData as $blog)
-          <article class="blog-card">
-              <div class="card-image">
-                  <img src="{{ asset($blog->img_url) }}" alt="Seasonal Menu">
-              </div>
-              <div class="card-content">
-                  <span class="category">{{ $blog->disease_name }}</span>
-                  <h2>{{ $blog->blog_title }}</h2>
-                  <p>{!! $blog->blog_description !!}</p>
-                  <div class="card-meta">
-                      <span class="author">{{ $blog->blog_author }}</span>
-                      <span class="read-time"> <a href="{{route('single-blog-page $blog-id')}}">See More</a> </span>
-                  </div>
-              </div>
-          </article>
-          @endforeach
-      </div>
-  </main>
+    <div class="blog-grid">
+        @foreach($BlogData as $blog)
+        <article class="blog-card">
+            <div class="card-image">
+                <img src="{{ asset($blog->img_url) }}" alt="Seasonal Menu">
+            </div>
+            <div class="card-content">
+                <span class="category">{{ $blog->disease_name }}</span>
+                <h2>{{ $blog->blog_title }}</h2>
+                <p>{!! $blog->blog_description !!}</p>
+                <div class="card-meta">
+                    <span class="author">{{ $blog->blog_author }}</span>
+                    <span class="read-time">
+                        <a href="{{ route('single-blog-page', ['id' => $blog->id]) }}">See More</a>
+                    </span>
+                </div>
+            </div>
+        </article>
+        @endforeach
+    </div>
+</main>
+
 
 
 @include('userpanel.components.footer')

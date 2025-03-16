@@ -13,11 +13,14 @@ class BlogController extends Controller
         $BlogData = Blog::latest()->get();
         return view('userpanel.blog-page', compact('BlogData'));
     }
-
     public function SingleblogpageData($id) {
-        $singleBlogData = Blog::latest()->get();
-        return view('userpanel.single-blog-page', compact('singleBlogData'));
+        // Fetch the single blog post by ID
+        $blog = Blog::findOrFail($id);
+
+        // Pass only the required blog to the view
+        return view('userpanel.single-blog-page', compact('blog'));
     }
+
 
     public function BlogList()
     {

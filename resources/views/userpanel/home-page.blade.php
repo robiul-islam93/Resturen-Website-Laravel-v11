@@ -147,56 +147,62 @@
 
       <div class="col-lg-6">
         <div
-          class="video-thumbnail"
-          data-bs-toggle="modal"
-          data-bs-target="#videoModal"
+            class="video-thumbnail"
+            data-bs-toggle="modal"
+            data-bs-target="#videoModal"
         >
-          <img
-            src="{{asset('userpanel/assets/img/signature-dishes-img/all-signature-dishes-img/1_2x.webp')}}"
-            alt="Video Thumbnail"
-          />
-          <i class="fas fa-play play-btn"></i>
+            <img
+                src="{{ asset('userpanel/assets/img/signature-dishes-img/all-signature-dishes-img/1_2x.webp') }}"
+                alt="Video Thumbnail"
+            />
+            <i class="fas fa-play play-btn"></i>
         </div>
-      </div>
+    </div>
     </div>
   </div>
 
-  <!-- Modal -->
+
   <div
-    class="modal fade"
-    id="videoModal"
-    tabindex="-1"
-    aria-labelledby="videoModalLabel"
-    aria-hidden="true"
-  >
-    <div class="modal-dialog modal-dialog-centered">
+  class="modal fade"
+  id="videoModal"
+  tabindex="-1"
+  aria-labelledby="videoModalLabel"
+  aria-hidden="true"
+>
+  <div class="modal-dialog modal-dialog-centered">
       <div class="modal-content">
-        <div class="modal-header">
-          <h5 class="modal-title" id="videoModalLabel">Watch Our Story</h5>
-          <button
-            type="button"
-            class="btn-close"
-            data-bs-dismiss="modal"
-            aria-label="Close"
-          ></button>
-        </div>
-        <div class="modal-body">
-          <div class="ratio ratio-16x9">
-            <iframe
-              width="560"
-              height="315"
-              src="https://www.youtube.com/embed/kpHBxLqkikw?si=FibWPrbB7pUgz0oB"
-              title="YouTube video player"
-              frameborder="0"
-              allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share"
-              referrerpolicy="strict-origin-when-cross-origin"
-              allowfullscreen
-            ></iframe>
+          <div class="modal-header">
+              <h5 class="modal-title" id="videoModalLabel">Watch Our Story</h5>
+              <button
+                  type="button"
+                  class="btn-close"
+                  data-bs-dismiss="modal"
+                  aria-label="Close"
+              ></button>
           </div>
-        </div>
+          <div class="modal-body">
+              <div class="ratio ratio-16x9">
+                  <video id="foodBlogVideo" width="100%" controls>
+                      <source src="{{asset('userpanel/assets/video/lv_0_20240921144816.mp4')}}" type="video/mp4">
+                      Your browser does not support the video tag.
+                  </video>
+              </div>
+          </div>
       </div>
-    </div>
   </div>
+</div>
+
+<script>
+  // Stop video when modal is closed
+  document.getElementById('videoModal').addEventListener('hidden.bs.modal', function () {
+      var video = document.getElementById('foodBlogVideo');
+      if (!video.paused) {
+          video.pause();
+      }
+  });
+</script>
+
+
 </div>
 <!-- About Section End -->
 

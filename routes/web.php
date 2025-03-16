@@ -77,7 +77,8 @@ Route::view('/kitchen-page', 'userpanel.kitchen-page');
 Route::view('/menu-page', 'userpanel.menu-page');
 Route::view('/about-page', 'userpanel.about-page');
 Route::get('/blog-page', [BlogController::class, 'blogpageData'])->name('blog-page');
-Route::get('/single-blog-page{id}', [BlogController::class, 'SingleblogpageData'])->name('single-blog-page');
+Route::get('/single-blog-page/{id}', [BlogController::class, 'SingleblogpageData'])->name('single-blog-page');
+
 
 
 
